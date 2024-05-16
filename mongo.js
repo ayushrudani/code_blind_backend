@@ -1,8 +1,8 @@
 const { MongoClient } = require("mongodb");
-const dotenv = require("dotenv");
-dotenv.config();
+
 // Connection URL
-const uri = process.env.MONGO_URI;
+const uri =
+  "mongodb+srv://ayush:ayush@cluster0.dy9mm.mongodb.net/code-blind?retryWrites=true&w=majority&appName=Cluster0&useUnifiedTopology=true";
 
 // Create a new MongoClient
 const client = new MongoClient(uri);
